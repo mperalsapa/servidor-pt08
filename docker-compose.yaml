@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    container_name: sp08-laravel
+    build: .
+    ports:
+      - "8023:80"
+    stdin_open: true
+    tty: true
+    # volumes:
+    #   - ./:/var/www/html
